@@ -317,3 +317,212 @@ table ul li{
 	/*line-height: 35px;*/
 }
 
+@media screen and (max-width:1050px){
+.contenedor-header{
+	padding: 0 20px;
+}
+
+.contenedor{
+	padding: 0 20px;
+}
+
+.nav{
+	margin-right: 20px;
+}
+
+.info{
+	padding: 0 10px 0 10px;
+}
+}
+
+@media screen and (max-width:810px){
+
+.contacto{
+max-width: 300px;
+}
+
+}
+
+@media screen and (max-width:800px){
+
+.contenedor-guitarras{
+	text-align: center;
+}
+
+.guitarras{
+	height: auto;
+}
+
+.guitarras ol{
+	list-style: none;
+	padding: 0
+}
+
+.guitarraA img,.guitarraB img{
+	float: none;
+	position: static;
+}
+
+.guitarraA,.guitarraB{
+	padding: 0;
+}
+
+.classic{
+	margin: 0
+}
+
+.classic h2,.acustic h2{
+	margin: 0
+}
+
+.acustic{
+	padding: 0
+}
+
+.form,.col1{
+	width: auto;
+}
+
+}
+
+@media screen and (max-width: 749px){
+	.title{
+		font-size: 50px;
+	}
+
+	.flex-footer{
+		display: block;
+	}
+
+	.contacto{
+		margin: auto
+	}
+
+	.form{
+		max-width: 350px;
+		margin: auto;
+	}
+
+	.form,.col2,.col2 label,.col2 textarea{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	header{
+		text-align: center;
+	}
+
+	.nav{
+		position: static;
+		width: 100%;
+		margin:0;
+	}
+
+	.nav ul{
+		padding: 0
+	}
+
+	.nav ul li a{
+		margin:0;
+		padding: 0 5px;
+	}
+
+	.slogan{
+		margin:0;
+	}
+
+	.title{
+		font-size:45px;
+		text-align: center;
+	}
+
+	.description{
+		text-align: center;
+	}
+
+	.landing{
+		height: auto;
+	}
+
+	.btn-mas{
+		margin:10px 0 10px 0;
+	}
+
+}
+
+@media screen and (max-width: 534px){
+	.title{
+		font-size: 35px;
+	}
+
+	.description{
+		font-size: 16px;
+		margin-bottom: 12px
+	}
+
+	.btn-mas{
+		display:block;
+		margin: auto;
+	}
+
+	.guitarras img{
+		width: 220px;
+	}
+
+	.tabla .contenedor{
+		padding: 0;
+		margin:0 10px;
+	}
+
+	.tabla table{
+		border: 2px solid #273b47;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.contenedor-header{
+		position: static;
+	}
+	.nav{
+		background: rgba(255,60,88,.9);
+		position: fixed;
+		top: 0;
+		left: -100%;
+		bottom: 0;
+		right: 0;
+		z-index: 3;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		transition: .3s;
+	
+	}
+
+	.nav ul li{
+		display: block;
+		padding: 20px 0;
+		border-bottom: 2px solid #ffffff;
+	}
+
+	.nav ul li:first-child{
+		border-top: 2px solid #ffffff;
+	}
+
+	.nav ul{
+		width: 100%;
+	}
+
+	#iconBurger{
+		visibility: visible;
+	}
+
+
+
+}
+
+.toggle{
+	left: 0;
+}
+
