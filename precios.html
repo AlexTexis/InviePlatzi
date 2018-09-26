@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Invie Precios</title>
+	<link rel="stylesheet" href="css/app.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">		
+</head>
+<body class="precios">
+	<section class="landing-precios cover" style="background-image: url(assets/cover.jpg);">
+		<header class="contenedor-header">
+			<figure class="logo"><img data-src="assets/invie2x.png" alt="inivie" width="170"/></figure>
+			<span  id="close"><i class="fas fa-bars" id="iconBurger"></i></span>
+
+			<nav class="nav" id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Precios</a></li>
+				</ul>
+			</nav>		
+		</header>
+	</section>
+
+	<section class="tabla">
+		<div class="contenedor">
+		<table>
+			<thead>
+				<tr>
+					<th>Modelo</th>
+					<th>Descripcion</th>
+					<th>Precio</th>
+					<th>Opiniones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						Invie Classic
+					</td>
+					<td>
+						Una guitarra mu pro
+					</td>
+					<td>
+						$100000
+					</td>
+					<td>
+						genial
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Invie Acustic
+					</td>
+					<td>
+						Una guitarra mu pro
+					</td>
+					<td>
+						$100000
+					</td>
+					<td>
+						buena
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Invie Electric
+					</td>
+					<td>
+						Una guitarra mu pro
+					</td>
+					<td>
+						$100000
+					</td>
+					<td>
+						increible
+					</td>
+				</tr>
+			</tbody>
+		</table>	
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="contenedor flex-footer">
+			<div class="contacto">
+				<img data-src="assets/invie2x.png" width="300" alt="ini3"/>
+				<a href=""><span class="tel">Telefono</span> 309487858</a>
+				<a href=""><span class="email">Email</span>contacto@invie.com</a>
+			</div>
+		
+		<form action="" class="form">
+			<div class="col1">
+				<label for="Nombre">Nombre</label>
+				<input type="text">
+				<label for="Nombre">Email</label>
+				<input type="text">
+				<div class="sexo">
+					<label for="mujer"><input type="radio">mujer</label>
+					<label for="hombre"><input type="radio">hombre</label>		
+				</div>
+				<div class="cotizaciones">
+					<label for=""><input type="checkbox">Cotizacion</label>
+					<label for=""><input type="checkbox">Reclamos</label>
+				</div>
+			</div>
+			<div class="col2">
+				<label for="">Comentarios</label>
+				<textarea name="" id="" cols="30" rows="7"></textarea>
+				<input type="submit">
+			</div>
+		</form>
+		</div>
+	</footer>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+	<script>
+		const close = document.getElementById("close");
+		const nav = document.getElementById("nav")
+		const query = window.matchMedia('(max-width:500px)')
+		query.addListener(screenQuery)
+		function screenQuery()
+		{
+			if(query.matches)
+			{
+
+				console.log("se cumplio")
+				close.addEventListener("touchstart",toggleBtn)
+			}
+			else{
+				console.log("no se cumplio")
+				close.removeEventListener("touchstart",toggleBtn)
+
+			}
+		}
+
+		screenQuery()
+
+		function toggleBtn()
+		{
+			nav.classList.toggle("toggle");
+		}
+
+		var bLazy = new Blazy({
+    	selector:'img'
+		});
+	
+	</script>
+</body>
+</html>
