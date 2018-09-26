@@ -1,0 +1,319 @@
+@font-face{font-family: "montserrat";src:url(../fonts/Montserrat-Bold.ttf)}
+
+
+
+body,html{
+	margin:0;
+	padding:0;
+	background:#fafafa;
+	font-family: "montserrat";
+}
+
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box; 
+}
+
+.landing{
+	padding: 24px 0 24px 0;
+	height: 450px;
+}
+
+.landing-precios{
+	padding: 24px 0 24px 0;
+	height: 115px;
+}
+
+.precios{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.tabla .contenedor{
+	overflow: auto;
+}
+	
+.contenedor{
+	max-width: 1024px;
+	margin: auto;
+
+}
+
+.contenedor-guitarras{
+	max-width: 900px;
+	margin: auto;
+
+}
+
+.contenedor-header{
+	max-width: 1024px;
+	margin:auto;
+	position:relative;
+}
+
+.logo,.nav,.nav ul li{
+	display: inline-block;
+}
+
+.logo{
+	margin:0;
+}
+
+.nav{
+	position:absolute;
+	right: 0;
+
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size:20px;
+	margin: 0 0 0 30px;
+}
+
+.nav ul li a:before{
+	content:"°";
+	position:relative;
+	top: 4px;
+	margin-right: 5px;
+}
+
+.cover{
+	background:50% 50% no-repeat;
+	background-size: cover;
+}
+
+.slogan{
+	color: #FFFFFF;
+	margin:80px 0 0 0;	
+}
+
+.title{
+	font-size: 60px;
+	margin: 0;
+}
+
+.underline{
+	text-decoration:underline;
+}
+
+.description{
+	margin: 4px 0 0 0;
+	font-size: 20px;
+}
+
+.btn-mas{
+	font-family: "montserrat";
+	margin:14px 0 100px 0;
+	padding: 10px 14px;
+	border: none;
+	border-radius: 50px;
+	background:linear-gradient(to left,#fe344e,#ff7250);
+	outline: transparent;
+	transition: .3s ease;
+	
+}
+
+.btn-mas:active{
+	transform: scale(0.8);
+}
+
+.btn-mas a{
+	text-decoration: none;
+	color: #ffffff
+}
+/* guitarras*/
+.info{
+margin-bottom: 50px;
+}
+
+.sub-title{
+	font-size: 25px;
+	color: #3c4859;
+}
+
+.guitarras{
+	height:250px;
+	border:2px solid #3c4859;
+	margin:14px 0 0 0;
+	border-radius:8px;
+	padding: 14px 0 0 16px;
+	position:relative;
+}
+
+.guitarraA img{
+	float: right;
+	position:absolute;
+	right: 0px;
+	bottom: 126px;
+	bottom: 0;
+}
+
+.guitarraB img{
+	float: left;
+	position:absolute;
+	left: 0px;
+	top: 9px;
+}
+
+.acustic{
+	padding: 0 0 0 20px;
+
+}
+
+.acustic h2,.classic h2{
+	margin:35px 0 0 0;
+	font-size: 35px;
+	color: #3c4859;
+}
+
+.acustic ol{
+	padding: 0 0 0 24px;
+}
+
+.acustic ol li{
+	margin:4px 0 0 0;
+}
+
+.classic{
+	margin-left: 420px;
+}
+
+.footer{
+	padding: 30px 0 30px 0;
+	background: #273b47;
+}
+
+.flex-footer{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.contacto{
+	width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.tel,.email{
+	display: block;
+
+}
+
+.contacto a{
+	margin:10px 10px 10px 0px;
+	text-decoration: none;;
+	color:#ffffff;
+}
+
+.form{
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	color:#ffffff;
+}
+
+.col1{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	padding: 0 10px 0 10px;
+}
+
+
+.col1 input{
+	padding: 7px 12px;
+	border-radius: 4px;
+	border: none;
+}
+
+.col1 label,.col2 label{
+	margin:10px 0 10px 0;
+}
+
+.sexo{
+	margin:10px 0 10px 0;
+}
+
+.cotizaciones{
+	font-size: 12px;
+}
+
+.col2{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.col2 textarea{
+	margin-bottom: 7px;
+}
+
+.col2 input{
+	font-family: "montserrat";
+	padding: 9px 12px;
+	color:#ffffff;
+	border:none;
+	border-radius:4px;
+	background:linear-gradient(to left,#fe344e,#ff7250);
+	cursor: pointer;
+}
+
+table{
+	border: 2px solid #273b47;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.tabla{
+	flex:1;
+}
+
+table thead{
+	background: #273b47;
+	color: #ffffff;
+
+}
+
+table th{
+	padding: 13px 10px;
+}
+
+table td{
+	text-align:center;
+	padding: 16px 12px;
+	border:2px solid #273b47;
+}
+
+table tbody ul{
+	padding: 10px 10px;
+}
+
+table ul li{
+	list-style: none;
+}
+
+#iconBurger{
+	display: inline-block;
+	color: #ffffff;
+	height:35px;
+	width: 35px;
+	background: rgba(256,256,256,.1);
+	border-radius: 50%;
+	padding: 6px;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	visibility: hidden;
+	z-index: 5;
+	/*line-height: 35px;*/
+}
+
