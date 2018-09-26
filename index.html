@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Invie</title>
+	<link rel="stylesheet" href="">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<section class="landing cover" style="background-image: url(assets/cover.jpg);">
+			<header class="contenedor-header">
+				<figure class="logo"><img src="assets/invie2x.png" alt="" width="170"/></figure>
+				<span  id="close"><i class="fas fa-bars" id="iconBurger"></i></span>
+				<nav class="nav" id="nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="precios.html">Precios</a></li>
+						<li><a href="#">Guitarras</a></li>
+					</ul>
+				</nav>		
+			</header>
+		<div class="contenedor">
+			<article class="slogan">
+				<h1 class="title">Guitarras <span class="underline">Invie</span>sibles</h1>
+				<p class="description">Se la estrella de rock que siempre quiciste ser</p>
+				<button class="btn-mas"><a href="">Conoce más</a></button>
+			</article>
+		</div>
+	</section>
+
+	<section class="info">
+		<div class="contenedor-guitarras">
+		<h3 class="sub-title">Nuestras Guitarras</h3>
+			<article class="guitarras guitarraA">
+				<img data-src="assets/invie-acustica.png" width="360" alt="classic"/>
+				<div class="acustic">
+					<h2>Invie Acustica</h2>
+					<ol>
+						<li>Estilo Vintage</li>
+						<li>Madera Pura</li>
+						<li>Incluye estuche invisible de aluminio</li>
+					</ol>
+				</div>
+			</article>
+			<article class="guitarras guitarraB">
+				<img data-src="assets/invie-classic.png" width="400" alt="classic"/>
+				<div class="classic">
+					<h2>Invie Classic</h2>
+					<ol>
+						<li>Estilo Vintage</li>
+						<li>Liviana</li>
+						<li>Inicia tu camino como Rockstar</li>
+					</ol>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="contenedor flex-footer">
+			<div class="contacto">
+				<img data-src="assets/invie2x.png" width="250px" alt="invie"/>
+				<a href=""><span class="tel">Telefono</span> 309487858</a>
+				<a href=""><span class="email">Email</span>contacto@invie.com</a>
+			</div>
+		
+		<form action="" class="form">
+			<div class="col1">
+				<label for="Nombre">Nombre</label>
+				<input type="text">
+				<label for="Nombre">Email</label>
+				<input type="text">
+				<div class="sexo">
+					<label for="mujer"><input type="radio">mujer</label>
+					<label for="hombre"><input type="radio">hombre</label>		
+				</div>
+				<div class="cotizaciones">
+					<label for=""><input type="checkbox">Cotizacion</label>
+					<label for=""><input type="checkbox">Reclamos</label>
+				</div>
+			</div>
+			<div class="col2">
+				<label for="">Comentarios</label>
+				<textarea name="" id="" cols="30" rows="7"></textarea>
+				<input type="submit">
+			</div>
+		</form>
+		</div>
+	</footer>
+
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		const close = document.getElementById("close");
+		const nav = document.getElementById("nav")
+		const query = window.matchMedia('(max-width:500px)')
+		const query2 = window.matchMedia('(max-width:400px)')
+		const dom = document.body;
+
+		query.addListener(screenQuery)
+		function screenQuery()
+		{
+			if(query.matches)
+			{
+
+				console.log("se cumplio")
+				close.addEventListener("touchstart",toggleBtn)
+				
+
+			}
+			else{
+				console.log("no se cumplio")
+				close.removeEventListener("touchstart",toggleBtn)
+
+			}
+		}
+		screenQuery()
+		// swipe
+		function swipeRight()
+		{
+			if(query2.matches)
+			{
+			nav.classList.add("toggle")
+			}
+		}
+
+		function swipeLeft()
+		{
+			if(query2.matches)
+			{
+			nav.classList.remove("toggle")		
+			}
+		}
+		//swipe
+
+		function toggleBtn()
+		{
+			nav.classList.toggle("toggle");
+		}
+
+		var bLazy = new Blazy({
+    	selector:'img'
+		});
+		
+		var hammertime = new Hammer(dom);
+		hammertime.on('swiperight',swipeRight)
+
+		var hammertime = new Hammer(dom);
+		hammertime.on('swipeleft',swipeLeft)
+		
+	</script>
+</body>
+</html>
